@@ -1,0 +1,296 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0001",
+      "name": "2Pac",
+      "type": "musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "2pac.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0002",
+      "name": "Axl Rose",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 249,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "axl-rose.jpg"
+    }
+  },
+   {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0003",
+      "name": "Bob Marley",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 79,
+      "category": 3,
+      "size": "5&quot; x 3&quot;",
+      "image": "bob-marley.jpg"
+    }
+  },
+   {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0004",
+      "name": "Boy and his dog",
+      "type": "Landscape",
+      "description": "XXX",
+      "price": 249,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "boy-and-his-dog.jpg"
+    }
+  },
+   {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0005",
+      "name": "Clint Eastwood",
+      "type": "Actor",
+      "description": "XXX",
+      "price": 249,
+      "category": 2,
+      "size": "A3",
+      "image": "clint-eastwood.jpg"
+    }
+  },
+   {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0006",
+      "name": "David Bowie",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 79,
+      "category": 3,
+      "size": "5&quot; x 3&quot;",
+      "image": "david-bowie.jpg"
+    }
+  },
+   {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0007",
+      "name": "Dean Martin",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "dean-martin.jpg"
+    }
+  },
+   {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0008",
+      "name": "Drake",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 79,
+      "category": 3,
+      "size": "5&quot; x 3&quot;",
+      "image": "drake.jpg"
+    }
+  },
+ {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0009",
+      "name": "James Deane",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "james-deane.jpg"
+    }
+  },
+    {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0010",
+      "name": "John Wayne",
+      "type": "Actor",
+      "description": "XXX",
+      "price": 199,
+      "category": 2,
+      "size": "A3",
+      "image": "john-wayne.jpg"
+    }
+  },
+    {
+    "pk":11,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0011",
+      "name": "Johnny Cash",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "johnny-cash-2.jpg"
+    }
+  },
+    {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0012",
+      "name": "Johnny Cash",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "johnny-cash.jpg"
+    }
+  },
+    {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0013",
+      "name": "Leonard Cohen",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 299,
+      "category": 1,
+      "size": "16&quot; x 20&quot;",
+      "image": "leonard-cohen-1.jpg"
+    }
+  },
+    {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0014",
+      "name": "Leonard Cohen",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 249,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "leonard-cohen-2.jpg"
+    }
+  },
+    {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0015",
+      "name": "Prince",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "prince.jpg"
+    }
+  },
+    {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0016",
+      "name": "Stevie Wonder",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "stevie-wonder-2.jpg"
+    }
+  },
+    {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0017",
+      "name": "Stevie Wonder",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 1,
+      "size": "12&quot; x 16&quot;",
+      "image": "stevie-wonder.jpg"
+    }
+  },
+    {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0018",
+      "name": "Forge Bar, Donegal Town",
+      "type": "Building",
+      "description": "XXX",
+      "price": 49,
+      "category": 3,
+      "size": "5&quot; x 3&quot;",
+      "image": "the-forge-bar.jpg"
+    }
+  },
+    {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0019",
+      "name": "Tom Waits",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 3,
+      "size": "6&quot; x 4&quot;",
+      "image": "tom-waits.jpg"
+    }
+  },
+     {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0020",
+      "name": "David Bowie",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 2,
+      "size": "A4",
+      "image": "david-bowie-2.jpg"
+    }
+  },
+     {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "TAA0021",
+      "name": "Noel Connelly & Pat Holmes",
+      "type": "Musician",
+      "description": "XXX",
+      "price": 199,
+      "category": 3,
+      "size": "A4",
+      "image": "tom-waits.jpg"
+    }
+  }
+] 
