@@ -17,10 +17,10 @@
                 Type
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Oil based</a>
-                <a href="" class="dropdown-item">Pencil</a>
-                <a href="" class="dropdown-item">Pen</a>
-                <a href="" class="dropdown-item">xxx</a>
+                <a href="{% url 'products' %}?category=oil-12x16,oil-16x20" class="dropdown-item">Oil Paintings</a>
+                <a href="{% url 'products' %}?category=pencil-a3,pencil-a4,pencil-5x3" class="dropdown-item">Pencil Drawings</a>
+                <a href="{% url 'products' %}?category=biro-5x3,biro-6x4,biro-a4,biro-a3" class="dropdown-item">Biro Drawings</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Types</a>
             </div>
         </li>
 
@@ -29,10 +29,13 @@
                 Size
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Postit</a>
-                <a href="" class="dropdown-item">A3</a>
-                <a href="" class="dropdown-item">12" x 16"</a>
-                <a href="" class="dropdown-item">16" x 20"</a>
+                <a href="{% url 'products' %}?category=oil-16x20" class="dropdown-item">16" x 20"</a>
+                <a href="{% url 'products' %}?category=oil-12x16" class="dropdown-item">12" x 16"</a>
+                <a href="{% url 'products' %}?category=pencil-a3,biro-a3" class="dropdown-item">A3</a>
+                <a href="{% url 'products' %}?category=pencil-a4,biro-a4" class="dropdown-item">A4</a>
+                <a href="{% url 'products' %}?category=biro-6x4" class="dropdown-item">6" x 4"</a>
+                <a href="{% url 'products' %}?category=pencil-5x3,biro-5x3" class="dropdown-item">5" x 3"</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Sizes</a>
             </div>
         </li>
     </ul>

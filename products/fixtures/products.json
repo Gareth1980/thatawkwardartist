@@ -5,11 +5,11 @@
     "fields": {
       "sku": "TAA0001",
       "name": "2Pac",
-      "type": "musician",
+      "type": "Musician",
       "description": "XXX",
       "price": 199,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "2pac.jpg"
     }
   },
@@ -23,7 +23,7 @@
       "description": "XXX",
       "price": 249,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "axl-rose.jpg"
     }
   },
@@ -36,8 +36,8 @@
       "type": "Musician",
       "description": "XXX",
       "price": 79,
-      "category": 3,
-      "size": "5&quot; x 3&quot;",
+      "category": 6,
+      "size": "5in x 3in",
       "image": "bob-marley.jpg"
     }
   },
@@ -51,7 +51,7 @@
       "description": "XXX",
       "price": 249,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "boy-and-his-dog.jpg"
     }
   },
@@ -64,7 +64,7 @@
       "type": "Actor",
       "description": "XXX",
       "price": 249,
-      "category": 2,
+      "category": 3,
       "size": "A3",
       "image": "clint-eastwood.jpg"
     }
@@ -78,8 +78,8 @@
       "type": "Musician",
       "description": "XXX",
       "price": 79,
-      "category": 3,
-      "size": "5&quot; x 3&quot;",
+      "category": 6,
+      "size": "5in x 3in",
       "image": "david-bowie.jpg"
     }
   },
@@ -93,7 +93,7 @@
       "description": "XXX",
       "price": 199,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "dean-martin.jpg"
     }
   },
@@ -106,8 +106,8 @@
       "type": "Musician",
       "description": "XXX",
       "price": 79,
-      "category": 3,
-      "size": "5&quot; x 3&quot;",
+      "category": 6,
+      "size": "5in x 3in",
       "image": "drake.jpg"
     }
   },
@@ -121,7 +121,7 @@
       "description": "XXX",
       "price": 199,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "james-deane.jpg"
     }
   },
@@ -134,7 +134,7 @@
       "type": "Actor",
       "description": "XXX",
       "price": 199,
-      "category": 2,
+      "category": 3,
       "size": "A3",
       "image": "john-wayne.jpg"
     }
@@ -149,7 +149,7 @@
       "description": "XXX",
       "price": 199,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "johnny-cash-2.jpg"
     }
   },
@@ -163,7 +163,7 @@
       "description": "XXX",
       "price": 199,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "johnny-cash.jpg"
     }
   },
@@ -176,8 +176,8 @@
       "type": "Musician",
       "description": "XXX",
       "price": 299,
-      "category": 1,
-      "size": "16&quot; x 20&quot;",
+      "category": 2,
+      "size": "16in x 20in",
       "image": "leonard-cohen-1.jpg"
     }
   },
@@ -191,7 +191,7 @@
       "description": "XXX",
       "price": 249,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "leonard-cohen-2.jpg"
     }
   },
@@ -205,7 +205,7 @@
       "description": "XXX",
       "price": 199,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "prince.jpg"
     }
   },
@@ -219,7 +219,7 @@
       "description": "XXX",
       "price": 199,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "stevie-wonder-2.jpg"
     }
   },
@@ -233,7 +233,7 @@
       "description": "XXX",
       "price": 199,
       "category": 1,
-      "size": "12&quot; x 16&quot;",
+      "size": "12in x 16in",
       "image": "stevie-wonder.jpg"
     }
   },
@@ -246,8 +246,8 @@
       "type": "Building",
       "description": "XXX",
       "price": 49,
-      "category": 3,
-      "size": "5&quot; x 3&quot;",
+      "category": 6,
+      "size": "5in x 3in",
       "image": "the-forge-bar.jpg"
     }
   },
@@ -260,8 +260,8 @@
       "type": "Musician",
       "description": "XXX",
       "price": 199,
-      "category": 3,
-      "size": "6&quot; x 4&quot;",
+      "category": 7,
+      "size": "6in x 4in",
       "image": "tom-waits.jpg"
     }
   },
@@ -274,7 +274,7 @@
       "type": "Musician",
       "description": "XXX",
       "price": 199,
-      "category": 2,
+      "category": 4,
       "size": "A4",
       "image": "david-bowie-2.jpg"
     }
@@ -288,7 +288,7 @@
       "type": "Musician",
       "description": "XXX",
       "price": 199,
-      "category": 3,
+      "category": 8,
       "size": "A4",
       "image": "noel-connelly-pat-holmes.jpg"
     }

@@ -3,24 +3,72 @@
     "pk": 1,
     "model": "products.category",
     "fields": {
-      "name": "oil",
-      "friendly_name": "Oil based painting"
+      "name": "oil-12x16",
+      "friendly_name": "Oil Painting"
     }
   },
   {
     "pk": 2,
     "model": "products.category",
     "fields": {
-      "name": "pencil",
-      "friendly_name": "Pencil"
+      "name": "oil-16x20",
+      "friendly_name": "Oil Painting"
     }
   },
   {
     "pk": 3,
     "model": "products.category",
     "fields": {
-      "name": "biro",
-      "friendly_name": "Biro"
+      "name": "pencil-a3",
+      "friendly_name": "Pencil Drawing"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "pencil-a4",
+      "friendly_name": "Pencil Drawing"
+    }
+  },
+    {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "pencil-5x3",
+      "friendly_name": "Biro Drawing"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "biro-5x3",
+      "friendly_name": "Biro Drawing"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+      "name": "biro-6x4",
+      "friendly_name": "Biro Drawing"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+      "name": "biro-a4",
+      "friendly_name": "Biro Drawing"
+    }
+  },
+    {
+    "pk": 9,
+    "model": "products.category",
+    "fields": {
+      "name": "biro-a3",
+      "friendly_name": "Biro Drawing"
     }
   }
 ] 
