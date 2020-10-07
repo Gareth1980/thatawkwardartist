@@ -1,14 +1,228 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "base.html" %} {% load static %} {% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %} {% block content %}
+<!-- Information on about me and carousel of images -->
+<section class="mt-5">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters biropainting d-flex flex-row">
+      <div class="col-sm-6 d-sm-block order-md-2">
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
+            <!--Carousel Wrapper-->
+            <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="5"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="view">
+                            <img class="d-block mx-auto w-80 image-carousel responsive rounded" src="media/home1.jpg" alt="Eye Spy">
+                            <div class="mask rgba-black-light"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="carousel-img-text h6-responsive">Eye Spy</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                            <img class="d-block mx-auto w-80 image-carousel responsive rounded" src="media/home2.jpg" alt="Handful of flowers">
+                            <div class="mask rgba-black-strong"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="carousel-img-text h6-responsive">Handful of Flowers</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                            <img class="d-block mx-auto w-80 image-carousel responsive rounded" src="media/home3.jpg" alt="Designer Coffee Cups">
+                            <div class="mask rgba-black-strong"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="carousel-img-text h6-responsive">Designer Coffee Cups</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                            <img class="d-block mx-auto w-80 image-carousel responsive rounded" src="media/home4.jpg" alt="Leonard Cohen">
+                            <div class="mask rgba-black-slight"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="carousel-img-text h3-responsive">Leonard Cohen</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                            <img class="d-block mx-auto w-80 image-carousel responsive rounded" src="media/home5.jpg" alt="Mick Jagger">
+                            <div class="mask rgba-black-strong"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="carousel-img-text h6-responsive">Mick Jagger</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                            <img class="d-block mx-auto w-80 image-carousel responsive rounded" src="media/home6.jpg" alt="George Ballooney">
+                            <div class="mask rgba-black-strong"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="center carousel-img-text h3-responsive">George Ballooney</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+            <!--/.Carousel Wrapper-->
+
         </div>
-    </div>
-{% endblock %}
 
-{% block content %}
-    <h1 class="display-4 text-success">Test again</h1>
+
+
+      </div>
+      <div class="col-sm-6 my-auto painting-types-text">
+        <h3 class="m-3"><i class="fas fa-palette"></i> About Me</h3>
+        <p class="m-3">
+          Welcome to my website, That Awkward Artist. Here you will find all my latest artwork. 
+          The 3 mediums I mostly use are oil, pencil and biro. As you will see, when painting, 
+          I'm mostly inspired to paint my favourite musicians. I tend to use colours I feel 
+          reflect their character or the particular quote I'm using as inspiration, for example -
+          If the quote I'm using has a melancholic or dark undertone then I usually try and reflect 
+          that when choosing what colours to paint with. In contrast, Stevie Wonder is known for his 
+          colourful outfits and upbeat, addictive melodies and so when I paint him the colours I use 
+          are a lot brighter and stronger. <br>
+          If you are interested in me painting something for you, please complete the contact form as 
+          the bottom of this page and I will get in touch with you.
+
+        </p>
+        <div class="category-btn">
+          <a
+            class="btn mb-2 mt-0 ml-3 text-white painting-btn"
+            href="{% url 'products' %}"
+            role="button"
+            >View All Artwork for Sale</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Information on 3 types of drawings -->
+<section class="painting-types">
+  <div class="container-fluid p-0">
+    <!-- Oil Paintings - text on left, image on right -->
+    <div class="row no-gutters oilpainting d-flex flex-row-reverse">
+      <div class="col-sm-6 d-sm-block order-md-2">
+        <img
+          class="d-block mx-auto responsive painting-img rounded"
+          src="media/prince.jpg"
+          alt="Prince"
+        />
+      </div>
+      <div class="col-sm-6 my-auto painting-types-text">
+        <h3 class="m-3">
+          <i class="fas fa-paint-brush"></i> Oil Painting
+        </h3>
+        <p class="m-3">
+          For my oil paintings, I use Georgian Oil which is traditionally
+          crafted and triple-milled in England, Georgian Oil colours provide
+          colour consistency from wet to dry and an even performance and finish
+          across all colours. With a smooth and buttery consistency, Georgian
+          Oil colours are ideal for experimenting with different brush
+          techniques.
+        </p>
+        <div class="category-btn">
+          <a
+            class="btn m-3 text-white painting-btn"
+            href="{% url 'products' %}?category=oil-12x16,oil-16x20"
+            role="button"
+            >View Oil Paintings</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Biro Drawing - text on right, image on left -->
+    <div class="row no-gutters biropainting d-flex flex-row">
+      <div class="col-sm-6 d-sm-block order-md-2">
+        <img
+          class="d-block mx-auto responsive painting-img rounded"
+          src="media/drake.jpg"
+          alt="Prince"
+        />
+      </div>
+      <div class="col-sm-6 my-auto painting-types-text">
+        <h3 class="m-3"><i class="fas fa-pen-alt"></i> Biro Drawing</h3>
+        <p class="m-3">
+          Ballpoint pen artwork is low cost and portable. In my spare time, I
+          would draw my favourite musicians on post-it notes and coffee cups to
+          keep myself amused. Before any long bus journey, I'd grab a coffee
+          before getting the bus, I would start to decorate the cup.
+        </p>
+        <div class="category-btn">
+          <a
+            class="btn mb-0 mt-0 ml-3 text-white painting-btn"
+            href="{% url 'products' %}?category=biro-5x3,biro-6x4,biro-a4,biro-a3"
+            role="button"
+            >View Biro Drawings</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Pencil Paintings -->
+    <!-- text on left, image on right -->
+    <div class="row no-gutters pencilpainting d-flex flex-row-reverse">
+      <div class="col-sm-6 d-sm-block order-md-2">
+        <img
+          class="d-block mx-auto responsive painting-img rounded"
+          src="media/david-bowie-2.jpg"
+          alt="Prince"
+        />
+      </div>
+      <div class="col-sm-6 my-auto painting-types-text">
+        <h3 class="caps m-3">
+          <i class="fas fa-pencil-alt"></i> Pencil Drawing
+        </h3>
+        <p class="m-3">
+          Pencil artwork is also low cost and portable. Again, I love to draw my
+          favourite musicians and actors.
+        </p>
+        <div class="category-btn">
+          <a
+            class="btn m-3 text-white painting-btn"
+            href="{% url 'products' %}?category=pencil-a3,pencil-a4,pencil-5x3"
+            role="button"
+            >View Pencil Drawings</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% endblock %}
