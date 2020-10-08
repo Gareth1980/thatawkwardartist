@@ -99,12 +99,10 @@
             <!--/.Carousel Wrapper-->
 
         </div>
-
-
-
-      </div>
+         </div>
       <div class="col-sm-6 my-auto painting-types-text">
-        <h3 class="m-3"><i class="fas fa-palette"></i> About Me</h3>
+      
+        <h3 class="m-3 logo-font"><i class="fas fa-palette"></i> About Me</h3>
         <p class="m-3">
           Welcome to my website, That Awkward Artist. Here you will find all my latest artwork. 
           The 3 mediums I mostly use are oil, pencil and biro. As you will see, when painting, 
@@ -144,7 +142,7 @@
         />
       </div>
       <div class="col-sm-6 my-auto painting-types-text">
-        <h3 class="m-3">
+        <h3 class="m-3 logo-font">
           <i class="fas fa-paint-brush"></i> Oil Painting
         </h3>
         <p class="m-3">
@@ -176,7 +174,7 @@
         />
       </div>
       <div class="col-sm-6 my-auto painting-types-text">
-        <h3 class="m-3"><i class="fas fa-pen-alt"></i> Biro Drawing</h3>
+        <h3 class="m-3 logo-font"><i class="fas fa-pen-alt"></i> Biro Drawing</h3>
         <p class="m-3">
           Ballpoint pen artwork is low cost and portable. In my spare time, I
           would draw my favourite musicians on post-it notes and coffee cups to
@@ -205,7 +203,7 @@
         />
       </div>
       <div class="col-sm-6 my-auto painting-types-text">
-        <h3 class="caps m-3">
+        <h3 class="m-3 logo-font">
           <i class="fas fa-pencil-alt"></i> Pencil Drawing
         </h3>
         <p class="m-3">
@@ -225,4 +223,98 @@
   </div>
 </section>
 
+<section class="contact-form">
+            <div>
+                <hr>
+                <h3 class="logo-font mb-4 text-center">Contact Me Form</h3>
+            </div>
+   <div class="container contact-me-form">
+  <form class="signup-form" onsubmit="return sendMail(this);">
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your email.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="type">Type</label>
+      </div>
+      <div class="col-75">
+        <select id="type" name="type" required>
+          <option value="oil">Oil Painting</option>
+          <option value="biro">Biro Drawing</option>
+          <option value="pencil">Pencil Drawing</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="size">Size</label>
+      </div>
+      <div class="col-75">
+        <select id="size" name="size" required>
+          <option value="16x20">16" x 20"</option>
+          <option value="12x16">12" x 16"</option>
+          <option value="6x4">6" x 4"</option>
+          <option value="5x3">5" x 3"</option>
+          <option value="A4">A4</option>
+          <option value="A3">A3</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="query">Query</label>
+      </div>
+      <div class="col-75">
+        <textarea id="query" name="query" placeholder="Your message/query.." style="height:100px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25"></div>
+      <div class="col-75">
+      <input class="rounded painting-btn text-white" type="Reset" value="Clear">
+      <input class="rounded painting-btn text-white" type="submit" value="Submit">
+    </div>
+    </div>
+  </form>
+</div>
+</section>
+
+<script>
+function sendMail(contactForm) {
+  emailjs
+    .send("gmail", "that_awkward_artist", {
+      from_name: contactForm.name.value,
+      from_email: contactForm.email.value,
+      from_type: contactForm.type.value,
+      from_size: contactForm.size.value,
+      query_request: contactForm.query.value,
+    })
+    .then(
+      function (response) {
+        //console.log("SUCCESS", response);
+        alert("Email sent successfully!");
+      },
+      function (error) {
+        //console.log("FAILED", error);
+        alert("FAILED!"+error);
+      }
+    );
+  return false;
+}
+</script>
+
 {% endblock %}
+
