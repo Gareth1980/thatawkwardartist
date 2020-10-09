@@ -113,6 +113,22 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+/* Cards on Products Page */
+.card-body,
+.card-footer {
+    background-color: #533BA8;
+}
+
+/* credit to codepen.io for idea */
+.product-img-card {
+    display: inline-block;
+	vertical-align: middle;
+	padding: 1.25rem;
+	background-color: #eaeaea;
+	position: relative;
+    border: 0.625rem solid #333;
+}
+
 /* Carousel Image Text */
 .carousel-img-text {
     color: #fff;

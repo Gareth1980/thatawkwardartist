@@ -47,6 +47,7 @@
     <title>That Awkward Artist {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
+  <div id="wrapper">
     <header class="container-fluid fixed-top">
         <div id="delivery-banner" class="row text-center">
             <div class="col free-delivery text-white">
@@ -115,7 +116,7 @@
         <div class="row nav-bg">
         <div class="col-lg-12 my-auto py-1 py-lg-0">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link mx-auto">
-                    <img class="my-0 card-img-top img-fluid" src="media/logo.jpg" alt="That Awkward Artist logo"/>
+                    <img class="my-0 card-img-top img-fluid" src="{{MEDIA_URL}}logo.jpg" alt="That Awkward Artist logo"/>
                 </a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light w-100">
@@ -159,5 +160,6 @@
     {% endblock %}
 
 {% include 'includes/footer.html' %}
+  </div>
   </body>
 </html>
