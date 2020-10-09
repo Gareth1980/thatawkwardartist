@@ -285,12 +285,12 @@
     "fields": {
       "sku": "TAA0021",
       "name": "Noel Connelly & Pat Holmes",
-      "type": "Musician",
+      "type": "GAA",
       "description": "XXX",
       "price": 199,
       "category": 8,
       "size": "A4",
-      "image": "noel-connelly-pat-holmes.jpg"
+      "image": "Noel-connelly-pat-holmes.jpg"
     }
   }
 ] 
