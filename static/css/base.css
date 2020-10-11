@@ -365,50 +365,6 @@ input[name='q']::placeholder {
     }
 }
 
-/* Social Links on Footer Styling */
-
-#social-links-heading {
-    word-spacing: 1px;
-}
-
-.social-links {
-    font-size: 1.2rem;
-    background-color: #533BA8;
-    width: 100%;
-    color: #fafafa;
-    padding-top: 0.2rem;
-    text-align: center;
-}
-
-.social-links a {
-    color: #fafafa;
-    margin: 0 1rem 1rem 1rem;
-    transition: 0.5s;
-}
-
-.social-links a:hover {
-    color: #957DFF;
-    text-decoration: none;
-}
-
-.footer-copyright {
-    background-color: rgb(58, 12, 95);
-}
-
-/* To fix footer at bottom of page for ipads as not enough content on some pages */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-.wrapper {
-  min-height: 100%;
-  margin-bottom: -50px;
-}
-.footer,
-.push {
-  height: 40px;
-}
-
 .oilpainting,
 .biropainting,
 .pencilpainting {
@@ -476,4 +432,49 @@ label {
     width: 100%;
     margin-top: 0;
   }
+}
+
+/* To fix footer at bottom of page - thanks to www.css-tricks.com */
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+/* Social Links on Footer Styling */
+
+#social-links-heading {
+    word-spacing: 1px;
+}
+
+.social-links {
+    font-size: 1.2rem;
+    background-color: #533BA8;
+    width: 100%;
+    color: #fafafa;
+    padding-top: 0.2rem;
+    text-align: center;
+}
+
+.social-links a {
+    color: #fafafa;
+    margin: 0 1rem 1rem 1rem;
+    transition: 0.5s;
+}
+
+.social-links a:hover {
+    color: #957DFF;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    background-color: rgb(58, 12, 95);
 }
