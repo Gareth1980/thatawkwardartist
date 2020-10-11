@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     background: #957DFF;
-    font-family: 'Lato';
+    font-family: "Roboto", sans-serif;
 }
 
 /* from Bulma */
@@ -20,12 +22,6 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: rgb(58, 12, 95);
-    color: white;
-    min-width: 260px;
-}
-
 .btn-black {
     background: rgb(58, 12, 95) !important;
     color: white;
@@ -37,9 +33,6 @@ body {
     border: 1px solid rgb(58, 12, 95);
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -65,7 +58,7 @@ body {
 }
 
 .border-black {
-    border: 1px solid rgb(58, 12, 95) !important;
+    border: 0.063rem solid rgb(58, 12, 95) !important;
 }
 
 .free-delivery {
@@ -97,11 +90,11 @@ a.category-badge > span.badge:hover {
 }
 
 .btt-button {
-    height: 42px;
-    width: 42px;
+    height: 2.625rem;
+    width: 2.625rem;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 0.625rem;
+    right: 0.625rem;
 }
 
 .btt-link,
@@ -119,7 +112,7 @@ input[name='q']::placeholder {
     background-color: #533BA8;
 }
 
-/* credit to codepen.io for idea */
+/* thanks to codepen.io for below css code, slightly adjusted */
 .product-img-card {
     display: inline-block;
 	vertical-align: middle;
@@ -134,11 +127,11 @@ input[name='q']::placeholder {
     color: #fff;
     background-color:rgb(83, 59, 168, 0.5);
     padding: 0.5rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     margin: auto;
     width: auto;
-    margin-bottom: 20px;
-    border-width: 1px;
+    margin-bottom: 1.25rem;
+    border-width: 0.063rem;
     border-style: solid;
     border-color: #fff;
 }
@@ -147,8 +140,8 @@ input[name='q']::placeholder {
 
 .message-container {
     position: fixed;
-    top: 72px;
-    right: 15px;
+    top: 4.5rem;
+    right: 0.938rem;
     z-index: 99999999999;
 }
 
@@ -157,19 +150,19 @@ input[name='q']::placeholder {
 }
 
 .toast-capper {
-    height: 2px;
+    height: 0.125rem;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
     height: 0; 
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
-    border-bottom: 10px solid rgb(58, 12, 95);
+    border-left: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent; 
+    border-bottom: 0.625rem solid rgb(58, 12, 95);
     position: absolute;
-    top: -10px;
-    right: 36px;
+    top: -0.625rem;
+    right: 2.25rem;
 }
 
 /* Convenience classes - colors copied from Bootstrap */
@@ -206,7 +199,7 @@ input[name='q']::placeholder {
 }
 
 .bag-notification-wrapper {
-    height: 100px;
+    height: 6.25rem;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -214,7 +207,7 @@ input[name='q']::placeholder {
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .container {
     max-width: 80%;
   }
@@ -253,14 +246,14 @@ input[name='q']::placeholder {
     -ms-user-select: none;
     user-select: none;
     background-color: rgb(58, 12, 95);
-    border: 1px solid rgb(58, 12, 95);
+    border: 0.063rem solid rgb(58, 12, 95);
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .5s ease-in-out,background-color .5s ease-in-out,border-color .5s ease-in-out,box-shadow .5s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
@@ -314,7 +307,7 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 10.25rem;
     }
 
     .main-logo-link {
@@ -325,11 +318,11 @@ input[name='q']::placeholder {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 130px;
+        padding-top: 10.625rem;
     }
 
     body {
-        height: calc(100vh - 130px);
+        height: calc(100vh - 10.625rem);
     }
 
     .display-4.logo-font.text-black {
@@ -378,45 +371,45 @@ input[name='q']::placeholder {
 .responsive {
     width: 100%;
     height: auto;
-    border: 5px solid rgb(58, 12, 95);
+    border: 0.313rem solid rgb(58, 12, 95);
 }
 
-/* Style inputs, select elements and textareas */
+/* Style inputs, select elements and textareas with thanks to www.w3schools.com */
 input[type=text], select, textarea{
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0.75rem;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.25rem;
   box-sizing: border-box;
   resize: vertical;
 }
 
 /* Style the label to display next to the inputs */
 label {
-  padding: 12px 12px 12px 0;
+  padding: 0.75rem 0.75rem 0.75rem 0;
   display: inline-block;
 }
 
 
 /* Style the container */
 .contact-me-form {
-  border-radius: 5px;
+  border-radius: 0.313rem;
   background-color: #957DFF;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 /* Floating column for labels: 25% width */
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 6px;
+  margin-top: 0.375rem;
 }
 
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
   width: 75%;
-  margin-top: 6px;
+  margin-top: 0.375rem;
 }
 
 /* Clear floats after the columns */
@@ -424,6 +417,11 @@ label {
   content: "";
   display: table;
   clear: both;
+}
+
+.reset-submit {
+    float: right;
+    margin: 0.625rem 0 0.625rem 0.625rem;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -452,7 +450,7 @@ body {
 /* Social Links on Footer Styling */
 
 #social-links-heading {
-    word-spacing: 1px;
+    word-spacing: 0.063rem;
 }
 
 .social-links {
