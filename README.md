@@ -56,6 +56,7 @@ to build an ecommerce website.
     * As an artist purchaser, I want to view a list of artwork so that I can select one or more to purchase
     * As an artist purchaser, I want to view a individual artwork details so that I can view more information on it
     * As an artist purchaser, I want to view the total of my purchases at any time details so that I know how much I'm going to spend
+    
 * Registration and User Accounts    
     * As a site user, I want to easily register for an account so that I can have a personal account and view my profile
     * As a site user, I want to easily recover my password in case I forgot it so that I can gain access my personal acocunt
@@ -104,27 +105,124 @@ in the website as this is by far one of the most popular and readable fonts to u
 <img src="wireframes/wireframe5.jpg" alt="WireframesMobile" width="350px">
 
 <h1 id="Features">3. Features</h1>
+That Awkward Artist comprises of a Homepage (with contact form), products page, shopping cart page, checkout page and profile page
+
 <h2>Navbar</h2>
 I have used a responsive navigation bar using bootstrap.  
 For mobile devices, the logo will remain at the top for easy navigation back to home page. A hamburger menu on the top-left expands a menu with links to 
-the different paintings by price, type and size. A search button, a my account button for login/register and a shopping cart button. On larger 
-devices the expanded menu is shown instead with the logo, a search bar, a my account button for login/register and a shopping cart button and 
-below these is  dropdown menus for all apintings, types and sizes. I feel this will be easy for users to 
+the different paintings by price, type and size. A search button, my account button for login/register and a shopping cart button. On larger 
+devices the expanded menu is shown instead with the logo on the right, a search bar in the middle, my account button for login/register and a shopping cart button and 
+below these is  dropdown menus for all paintings, types and sizes. I feel this will be easy for users to 
 quickly navigate the website. This navbar will be fixed at the top for easy navigation at all times.
 
-<h2>Card</h2>
+<h2>Footer</h2>
+The footer contains links to social media.
 
 
 <h2>Contact Form and EmailJS</h2>
-I included a contact form with 3 required fields (name, email and query) 
+I included a contact form with 5 required fields (name, email, type, size and query) 
 that when completed correctly will send an email to myself and an auto reply email
 to the sender using <a target="_blank" href="https://www.emailjs.com/">EmailJS</a>. 
 If one or more of the fields are not completed correctly, website visitor will be advised and
-will not be able to send until all fields completed.
+will not be able to send until all fields completed. A message will appear when form completed correctly and submitted saying "Email sent successfully!"
 
-<h2>Buttons</h2>
-When you hover over all buttons, it will change to a subtly darker shade of the exiting colour 
-with a shadow behind the button.
+<h2>Carousel</h2>
+On the homepage, the first thing you will see is a carousel of images relating to the Artists artwork in different forms. This will hopefully entice the user to scroll through the products page.
+
+<h2>All Paintings Page</h2>
+
+* The All Paintings page displays product cards, including the following information: name, size, price and category. 
+When the image of each painting is clicked, the user is redirected the individual painting page with detailed information.
+
+* If the user is admin, there are also 2 buttons displayed in the cards: Edit and Delete. Clicking Edit button redirects 
+admin to the Edit Product page. Clicking the Delete button deletes the product. The page reloads and the toast message 
+will inform about the successful deletion. These actions can be done only by superuser, attempts to access them by other 
+users will end up redirected to the homepage with toast error messages displayed.
+
+* I have included the sort options on each all paintings page which can be sorted by price, name and category. 
+
+<h2>Painting Detail Page</h2>
+
+* The painting details page displays information about the selected painting: category, name, description, price and product image. Clicking the image will open it in the new tab dispacing it full screen.
+
+* The user will only be allowed to add 1 of each painting, but have kept the quantity box included in case she has completes multiple copies of paintings in the future.
+
+* A painting can be added to the cart by clicking Add to cart button, that will be reflected in the cart icon in the navbar (grand total will be increased). 
+The toast success message will be displayed when the product is added to the cart.
+
+* If the user is admin, there are also 2 buttons displayed on this page: Edit and Delete. Clicking Edit button redirects 
+admin to the Edit Product page. Clicking the Delete button deletes the product. The page reloads and the toast message 
+will inform about the successful deletion. These actions can be done only by superuser, attempts to access them by other 
+users will end up redirected to the homepage with toast error messages displayed.
+
+<h2>Shopping Cart Page</h2>
+* I ahve 2 options at the bottom, keep shpping which will redirect the user back to all products page or secure checkout which will send the user to the checkout page.  
+
+* Cart page is available for both logged in and non-logged in users, so that it is possible to make purchase being a guest.
+
+* The page contains a summary of the user's order: image, name, size, sku, quantity, price, subtotal and grand total with a 
+remove button in case they want to delete a painting. A toast message will be displayed when a user removes an item from the shopping cart.
+
+<h2>Checkout Page</h2>
+
+* This includes an order summary consisting of image, name, quantity, subtotal and grand total.
+
+* The checkout form requires personal details, delivery details and payment details.
+
+* If a user already has a profile with the shipping information saved, the form will be pre-populated with this information.
+
+* If a required field is not completed, the user will be advised.
+
+* After completing personal and delivery details, the user has the option to create an account or login in order to save these details.
+
+* The user is informed how much the card will be charged below the complete order button.
+
+* Since the website is made for educational purposes only and the Stripe functionality is only for testing, only 4242 4242 4242 4242 
+card number will lead to the successfull payment. The user is asked to provide card number, expiration date (any date in future), 
+CVC (any numbers) and 5 digit postcode (any 5 digits).
+
+* If an incorrect number is used, the user will be advised by way of a message below the payment details.
+
+* A webhook is used to make sure that the order is processed even in the cases when the payment process is interrupted 
+(eg if a user accidentally closes the page or browser after clicking "complete order" button).
+
+* Once the form is submitted and the payment is successfully proceeded, the Checkout sucesss page is loaded and a confirmation 
+email is sent to the user's email. Also, a toast message appears to ensure the user that the order was processed successfully.
+
+<h2>Checkout Success Page</h2>
+
+* The paragraph with a Thank you message is displayed on the top of the page to inform a user that the payment was 
+processed and the email was sent to the user's email.
+
+* The 3 sections Order info, Shipping details and Order Summary contain all the information about the completed order.
+
+* Keep shopping button redirects user to the All Paintings page.
+
+<h2>Profile Page</h2>
+
+* Once registered or signed in, the user can update your mobile number and delivery address.
+
+* They can also view their order history (Order Number,	Date, Items and Order Total)
+
+<h2>Admin</h2>
+
+Product managment feature is available only for superusers. Admin page allows an owner of the 
+website to add new paintings by filling out a form on the Product Management page. If the form is valid, 
+the painting is added to the database and the user is redirected to the newly created paintings details page. 
+The defensive design is implemented to restrict other than admin users to manually enter the url to get access 
+to the page. User will be redirected to the home page with the toast error messages appeared. 
+
+<h2>Django-allauth</h2>
+
+Django allauth has all the standard features including...
+
+* Sign up - requires username, email, password twice and an email will be sent with a verification link
+
+* Login - requires either username or email and password with a toast message confirming successfully signed in
+
+* Logout - Once completed logout, a toast message confirming successfully logged out
+
+* Forgot password - requires email and email will be sent to link to update password
 
 <h2 id="FeaturesLeft">Possible Future Features</h2> 
 - unable to do due to time constraints
@@ -133,6 +231,7 @@ with a shadow behind the button.
 * When a painting is purchased, to be able to automatically delete that painting from the website.
 * Add a proper flash message when submit button is pressed in the contact us form to advise that it was
 completed (as well as receiving a confirmation email - already in place).
+* To use crispy forms instead of emailjs for the contact form to partially autocomplete when a user is signed in
 
 <h1 id="Technologies">4. Technologies</h1>
 <h2>Language Used</h2>
@@ -142,18 +241,15 @@ completed (as well as receiving a confirmation email - already in place).
 * <a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a>
 * <a target="_blank" href="https://www.python.org/">Python</a>
 
-<h2>Frameworks, Libraries & Programs Used</h2>
+<h2>Frameworks, Libraries, Databases & Programs Used</h2>
 
-* <a target="_blank" href="https://materializecss.com/">Materialize</a>
-    * **Materialize** was used to assist with the responsiveness and styling of the navbar, 
-    the sidebar, the cards, icons on forms, the colours, the shadows, the buttons, the modal 
-    and the footer.
+* <a target="_blank" href="https://getbootstrap.com/">Bootstrap</a>
+    * **Bootstrap** was used to assist with the responsiveness and styling of the navbar, 
+    the cards for each product, the colours, the buttons and the footer.
 * <a target="_blank" href="https://fonts.google.com/">Google Fonts</a>
-    * **Google fonts** were used to import the Montserrat and Roboto font into the style.css 
-    file which are the 2 fonts used in the project.
+    * **Google fonts** were used to import the Roboto font.
 * <a target="_blank" href="https://fontawesome.com/">Font Awesome</a>
-    * **Font Awesome** was used to add icons for UX purposes. Icons specifically used for social 
-    icons in footer.
+    * **Font Awesome** was used to add icons for UX purposes.
 * <a target="_blank" href="https://jquery.com/">jQuery</a>
     * The project uses **JQuery** to simplify DOM manipulation.
 * <a target="_blank" href="https://www.emailjs.com/">EmailJS</a>
@@ -171,21 +267,29 @@ completed (as well as receiving a confirmation email - already in place).
 * <a target="_blank" href="https://dashboard.heroku.com/">Heroku</a>
     * **Heroku** is a platform as a service (PaaS) that enables 
     developers to build, run, and operate applications entirely in the cloud. 
-    This website is deployed using Heroku.
-* <a target="_blank" href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a>
-    * **Flask** is used to dynamically generate pages and content within the application.    
-* <a target="_blank" href="https://pypi.org/project/pymongo//">PyMongo</a>
-    * **PyMongo**  is used connect and interact with my data to and from my MongoDB database.
+    This website is deployed using Heroku. 
 * <a target="_blank" href="https://en.wikipedia.org/wiki/Jinja_(template_engine)">Jinja</a>
     * **Jinja** is used as the template engine for python.
-* <a target="_blank" href="https://www.mongodb.com/cloud/atlas">MongoDB</a>
-    * **MongoDB** is used as my storage database for category name, questions and answers, eg
-        * _id 5ede8f190d65a7821001c3a0<br>
-category_name: "General Knowledge"<br>
-question: "Who opened its first store in Ireland first - Aldi or Lidl?"<br>
-answer: "Aldi"
+* <a target="_blank" href="https://www.postgresql.org/">PostgreSQL</a>
+    * **PostgreSQL** is a powerful, open source object-relational database system.
+* <a target="_blank" href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html">Boto3</a>
+    * **Boto3** is the Amazon Web Services (AWS) SDK for Python. It enables Python developers to create, configure, and manage AWS services, such as S3.
+* <a target="_blank" href="https://aws.amazon.com/">AWS S3 Bucket</a>
+    * **AWS S3 Bucket ** is used to store static and media files in production
+* <a target="_blank" href="https://pip.pypa.io/en/stable/installing/">PIP</a>
+    * **PIP** is used for installation of necessary tools
+* <a target="_blank" href="https://pypi.org/project/gunicorn/">Gunicorn</a>
+    * **Gunicorn** is a Python WSGI HTTP Server to enable deployment to Heroku
+<a target="_blank" href="https://pypi.org/project/psycopg2/">Psycopg</a>
+    * **Psycopg2** is needed to enable the PostgreSQL database to function with Django
+<a target="_blank" href="https://stripe.com/ie">Stripe</a>
+    * **Stripe** is a payment processing platform
+<a target="_blank" href="https://django-crispy-forms.readthedocs.io/en/latest/">Django Crispy Forms</a>
+    * **Django Crispy Forms** is used to control the rendering behavior of the Django forms in a very elegant and DRY way
 
 <h1 id="Testing">5. Testing</h1>
+During  the development of this project, I tested each function thoroughly 
+for the expected outcome, to make sure eveything is working as expected before each commit.
 
 ### UX Stories
 
