@@ -93,16 +93,24 @@ in the website as this is by far one of the most popular and readable fonts to u
 
 <h2 id="Wireframes">Wireframes</h2>
 
-<h3>Wireframes for mobile devices</h3> 
-<img src="wireframes/wireframe5.jpg" alt="WireframesLS1" width="350px">
-<img src="wireframes/wireframe4.jpg" alt="WireframesLS2" width="350px">
+<h3>Wireframes for Homepage</h3> 
+<img src="wireframes/wireframe8.jpg" alt="WireframesLS1" width="250px">
+<img src="wireframes/wireframe7.jpg" alt="WireframesLS2" width="250px">
 
-<h3>Wireframes for tablet devices</h3> 
-<img src="wireframes/wireframe3.jpg" alt="WireframesMS1" width="350px">
-<img src="wireframes/wireframe3.jpg" alt="WireframesLM2" width="350px">
+<h3>Wireframes for Products Page</h3> 
+<img src="wireframes/wireframe6.jpg" alt="WireframesMS1" width="250px">
+<img src="wireframes/wireframe5.jpg" alt="WireframesLM2" width="250px">
+<img src="wireframes/wireframe4.jpg" alt="WireframesLM2" width="250px">
 
-<h3>Wireframe for desktop devices</h3> 
-<img src="wireframes/wireframe5.jpg" alt="WireframesMobile" width="350px">
+<h3>Wireframe for Products Detail Page</h3> 
+<img src="wireframes/wireframe3.jpg" alt="WireframesMobile" width="250px">
+
+<h3>Wireframe for Shopping Cart Page</h3> 
+<img src="wireframes/wireframe2.jpg" alt="WireframesMobile" width="250px">
+
+<h3>Wireframe for Checkout Page</h3> 
+<img src="wireframes/wireframe1.jpg" alt="WireframesMobile" width="250px">
+<img src="wireframes/wireframe1.jpg" alt="WireframesMobile" width="250px">
 
 <h1 id="Features">3. Features</h1>
 That Awkward Artist comprises of a Homepage (with contact form), products page, shopping cart page, checkout page and profile page
@@ -232,7 +240,8 @@ Django allauth has all the standard features including...
 * Add a proper flash message when submit button is pressed in the contact us form to advise that it was
 completed (as well as receiving a confirmation email - already in place).
 * To use crispy forms instead of emailjs for the contact form to partially autocomplete when a user is signed in
-
+* Fix error - when I add a product to shopping cart and go back to products page and select the same product, 
+it increases the quantity to 2 which should not happen as only 1 of each product.
 <h1 id="Technologies">4. Technologies</h1>
 <h2>Language Used</h2>
 
@@ -292,7 +301,7 @@ During  the development of this project, I tested each function thoroughly
 for the expected outcome, to make sure eveything is working as expected before each commit.
 
 ### UX Stories
-
+I have gone through each user story and all have passed.
 
 ### Validation
 I used validator websites to test the following:
@@ -302,9 +311,6 @@ I used validator websites to test the following:
 * **Python**  - <a target="_blank" href="http://pep8online.com/">PEP8 Online Check</a> - a number of whitespace and lines too long warnings. Line 26 line too long (83 > 79 characters). Could not indent it any less or move it to next line.
 
 * **CSS** - <a target="_blank" href="https://jigsaw.w3.org/css-validator/#validate_by_input">W3C CSS Checker</a> - No errors found
-
- 
-
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -316,46 +322,70 @@ I used validator websites to test the following:
 When I right clicked inspect, zero error or warnings appeared.
 
 ### Responsiveness
-<p>I tested the responsiveness of the website on google chrome by using <a target="_blank" href="http://www.responsinator.com/">www.responsinator.com</a>. I also used the 
-the inspect by right clicking over the website and then going into the toggle device toolbar. I selected the most used devices to also test for 
-responsiveness i.e. iPhone 6/7/8, iPhone 6/7/8 plus, iPhone X, iPad and iPad Pro.</p>
+
+* I used the inspect by right clicking over the website and then going into the toggle device toolbar. I selected the most used devices to also test for 
+responsiveness i.e. iPhone 6/7/8, iPhone 6/7/8 plus, iPhone X, iPad and iPad Pro.
 
 ### Navbar
-All links in navabar in all pages are tested and working correctly. 
+
+* All links in navabar in all pages are tested and working correctly in botth mobile view and large screen view. Search bar working correctly testing it with various words.
 
 ### Footer
-All links in footer in all pages are tested and working correctly
+
+* All links in footer in all pages are tested and working correctly
 
 ### Links in main section of Pages
 **Home Page** 
-
+* All buttons on carousel working correctly
+* All links on each section on homepage working correctly
   
-**Products Pages**
-
-* Dropdown for category is tested and working correctly
-* Question and answer fields are tested and working correctly
-* Link to add question is tested and working correctly
-* If question, answer or both fields are left blank, question will not be added is tested and working correctly 
+**All Paintings and Painting Details Page**
+* I tested the sort by name, price and category, all working correctly
+* All links on the images working and are redirecting to the painting detail page
+* I logged in with superuser deatils and verified that the Edit/Delete buttons appear in both all painting and painting details pages
+* Tried to manually enter the /edit/ and /delete/ urls as a guest and a signed in user, both did not work as expected
+* I clicked on the "Add to Cart" button on the painting details page and working correctly with toast success message  and shopping cart updated with correct amount
+* I entered numbers other than 1 and error message came up as expected
+* on the painting details page, I clicked on the product's image and as expected, it opened in new tab as full screen image
 
 **Shopping Cart Pages**
+* I verified that the text and images of the added items are displayed correctly
+* I clicked on the "Continue shopping" link and is working correctly
+* I clicked the remove button and it's working correctly with successful toast message
+* I removed all the items and Your shopping cart is empty is shown and working correctly with successful toast message
+* I clicked the keep shopping button and it's working correctly
+* I clicked the secure checkout button and it's working correctly
 
-* Dropdown for category is tested and working correctly
-* Question and answer fields are tested and working correctly
-* Link to edit question is tested and working correctly
-* If question, answer or both fields are left blank, question will not be added is tested and working correctly
+**Checkout and checkout success pages**
+* I verified that the text and images(Order summary) are displayed correctly
+* I tried to submit an empty field set (check each section- Personal details, Shipping Info and Payment) and error message showed as expected
+* I tried to put incorrect information on email field (e.g. email without @) and error message shown as expected
+* In the Payment section enter the testing 4242 4242 4242 4242 card number, any expiration date in future and any CVC 
+and then clicked on the Complete Order button (this was also checked on Stripe Dashbord to see if the order was created), this redirected me to 
+the checkout success page as expected
+* I tried to enter different and incomplete card numbers, the expiration date in the past and errors messages shown as expected
 
-**Checkout Pages**
+**Login/Register pages**
 
-* All links for Edit, Delete and reveal answer are tested and working correctly
+* I registered with new email and received an email for verification as expected.
+* I tried to register again with same email, error message advising aleady a user as expected.
+* I tried to register with non matching passwords and error message advising passwors not matching as expected.
+* I signed in successfully with new email.
+* I signed out and on sign in page I clicked forgot password. I received email with link to create new password as expected.
 
 **Profile Page**
 
-* All links in Quiz purchase cards are tested and working correctly 
+* Once logged in successfully, I set up new delivery details. I logged out, cleared browsing history and signed in again and new delivery details still showing as expected.
+* I put products into shopping cart and when on checkout page, delivery details were prepopulated as expected.
 
 **Admin Pages**
 
-* Link back to Home page and shop page are tested and working correctly
-
+* When I go to homepage/admin, I enter superuser details and enter admin as expected.
+* By clicking My Account/Product Management, I try to add a product leaving a required field blank and click add product but an error message shows as expected.
+* I add a product and it redirects my to that product as expected. 
+* I click edit product and lets me edit it as expected.  
+* In price feild, I enter 12345678, and error messaages shows as expected. Only allowed 6 figures.  
+* I click delete product and is deleted and redirects me to products page as expected.
 
 ### Contact Us
 Contact Us working correctly. I tried to submit an empty form and verified that an error message about the 
