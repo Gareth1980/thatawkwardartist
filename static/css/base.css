@@ -1,3 +1,4 @@
+/* Alot of css code from Code Institution Project Boutique Ado with adjustments */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
@@ -356,6 +357,15 @@ input[name='q']::placeholder {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
+
+    .product-img-card {
+    display: inline-block;
+	vertical-align: middle;
+	padding: 0.25rem;
+	background-color: #eaeaea;
+	position: relative;
+    border: 0.225rem solid #333;
+    }
 }
 
 .oilpainting,
@@ -426,10 +436,15 @@ label {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25, .col-75 {
     width: 100%;
     margin-top: 0;
   }
+  input[type=submit] {
+      width: 30%;
+  }
+
+
 }
 
 /* To fix footer at bottom of page - thanks to www.css-tricks.com */

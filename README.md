@@ -164,7 +164,8 @@ will inform about the successful deletion. These actions can be done only by sup
 users will end up redirected to the homepage with toast error messages displayed.
 
 <h2>Shopping Cart Page</h2>
-* I ahve 2 options at the bottom, keep shpping which will redirect the user back to all products page or secure checkout which will send the user to the checkout page.  
+
+* I have 2 options at the bottom, keep shpping which will redirect the user back to all products page or secure checkout which will send the user to the checkout page.  
 
 * Cart page is available for both logged in and non-logged in users, so that it is possible to make purchase being a guest.
 
@@ -187,7 +188,7 @@ remove button in case they want to delete a painting. A toast message will be di
 
 * Since the website is made for educational purposes only and the Stripe functionality is only for testing, only 4242 4242 4242 4242 
 card number will lead to the successfull payment. The user is asked to provide card number, expiration date (any date in future), 
-CVC (any numbers) and 5 digit postcode (any 5 digits).
+CVC (any 3 digits) and 5 digit postcode (any 5 digits).
 
 * If an incorrect number is used, the user will be advised by way of a message below the payment details.
 
@@ -289,11 +290,11 @@ it increases the quantity to 2 which should not happen as only 1 of each product
     * **PIP** is used for installation of necessary tools
 * <a target="_blank" href="https://pypi.org/project/gunicorn/">Gunicorn</a>
     * **Gunicorn** is a Python WSGI HTTP Server to enable deployment to Heroku
-<a target="_blank" href="https://pypi.org/project/psycopg2/">Psycopg</a>
+* <a target="_blank" href="https://pypi.org/project/psycopg2/">Psycopg</a>
     * **Psycopg2** is needed to enable the PostgreSQL database to function with Django
-<a target="_blank" href="https://stripe.com/ie">Stripe</a>
+* <a target="_blank" href="https://stripe.com/ie">Stripe</a>
     * **Stripe** is a payment processing platform
-<a target="_blank" href="https://django-crispy-forms.readthedocs.io/en/latest/">Django Crispy Forms</a>
+* <a target="_blank" href="https://django-crispy-forms.readthedocs.io/en/latest/">Django Crispy Forms</a>
     * **Django Crispy Forms** is used to control the rendering behavior of the Django forms in a very elegant and DRY way
 
 <h1 id="Testing">5. Testing</h1>
@@ -301,25 +302,7 @@ During  the development of this project, I tested each function thoroughly
 for the expected outcome, to make sure eveything is working as expected before each commit.
 
 ### UX Stories
-I have gone through each user story and all have passed.
-
-### Validation
-I used validator websites to test the following:
-
-* **HTML** - <a target="_blank" href="https://validator.w3.org/">W3C Html Checker</a> - all errors in all html pages relate to { is not allowed in certain lines which relates to jinja.
-* **JavaScript** - <a target="_blank" href="https://jshint.com/">JSHint</a>  - zero warnings
-* **Python**  - <a target="_blank" href="http://pep8online.com/">PEP8 Online Check</a> - a number of whitespace and lines too long warnings. Line 26 line too long (83 > 79 characters). Could not indent it any less or move it to next line.
-
-* **CSS** - <a target="_blank" href="https://jigsaw.w3.org/css-validator/#validate_by_input">W3C CSS Checker</a> - No errors found
-<p>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" />
-    </a>
-</p>
-
-When I right clicked inspect, zero error or warnings appeared.
+I have gone through each user story and all have passed (see below)
 
 ### Responsiveness
 
@@ -408,7 +391,25 @@ Firefox |Good        | Good | n/a
 Safari  |Good        | Good | n/a      
 Miscosoft Edge   |Good        | Good | n/a    
 
-     
+### Validation
+I used validator websites to test the following:
+
+* **HTML** - <a target="_blank" href="https://validator.w3.org/">W3C Html Checker</a> - most errors in all html pages relate to { is not allowed in certain lines which relates to jinja.
+* **JavaScript** - <a target="_blank" href="https://jshint.com/">JSHint</a>  - 1 warning regarding let in countryfield.js
+* **Python**  - <a target="_blank" href="http://pep8online.com/">PEP8 Online Check</a> - a number of whitespace and lines too long warnings. Could not indent some of them. 
+* Also used the command python3 -m flake8 in the terminal to fix problems with code.
+
+* **CSS** - <a target="_blank" href="https://jigsaw.w3.org/css-validator/#validate_by_input">W3C CSS Checker</a> - No errors found
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+When I right clicked inspect, zero error or warnings appeared.
+
 
 
 
@@ -510,7 +511,7 @@ Note: for production you get the environment variable 'DATABASE_URL' from the He
 * click Enable Automatic Deploys in the Automatic Deployment section
 * Run git push command in the terminal, that would now push your code to both Github and Heroku, and perform the deployment.
 
-12. Run git push command in the terminal, that would now push your code to both Github and Heroku, and perform the deployment.
+13. Run git push command in the terminal, that would now push your code to both Github and Heroku, and perform the deployment.
 
 <h3>Hosting media files with AWS</h3>
 The static files and media files are hosted in the AWS S3 Bucket. To host them, you need to create an account in AWS and create your S3 basket with public access.

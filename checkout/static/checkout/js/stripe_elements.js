@@ -1,3 +1,4 @@
+/* From Code Institution Project Boutique Ado */
 /*
     Core logic/payment flow for this comes from here:
     https://stripe.com/docs/payments/accept-a-payment
